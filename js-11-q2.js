@@ -3,8 +3,8 @@
 // | Keyword      | Global Scope | Block Scope | Function Scope | Can be re-assign | Can be re-declare |
 // |--------------|--------------|-------------|----------------|------------------|-------------------|
 // | var          |      Y        |      Y       |         N       |        Y          |        Y           |
-// | let          |      Y        |      N       |         N       |        Y          |         N          |
-// | const        |      Y        |      N      |         N       |         N         |         N          |
+// | let          |      N        |      N       |         N       |        Y          |         N          |
+// | const        |      N        |      N      |         N       |         N         |         N          |
 
 
 

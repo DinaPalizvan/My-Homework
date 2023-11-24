@@ -14,5 +14,5 @@ console.log(name);//output: 'Dina'
 
 
 //can be used before declaration
-console.log(sth);//output: undefined
+console.log(sth);//output: undefined(not error)
 var sth='lkwjlgjndsflkv'

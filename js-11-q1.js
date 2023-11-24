@@ -14,8 +14,9 @@ function fnName() {
     }
     console.log(global);//works
     console.log(fnScope);//works
-    console.log(block);//works
+    console.log(block);//works(doesnt work with let and const)
 }
+fnName()
 console.log(global);//works
 console.log(fnscope);//error
 console.log(block);//error
