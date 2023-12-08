@@ -147,10 +147,13 @@ const names = [
 ];
 //! Answer:
 let enteredLetter
-const entered= isItLetter=()=>{
+const isItLetter=()=>{
   let letter=prompt('Enter a letter from A to Z.')
-  if(!isNaN(letter) || letter.length>1){
-    alert('Dude! enter ONE LETTER!');
+  if(!isNaN(letter) ){
+    alert('Dude! enter a LETTER!');
+    isItLetter()
+  }else if(letter.length>1){
+    alert('Dude! enter JUST ONE letter!');
     isItLetter()
   }else{
     enteredLetter=letter
@@ -158,16 +161,14 @@ const entered= isItLetter=()=>{
 }
 isItLetter()
 
-const nameFunc=(str, arr)=>{
+const nameFunc=(str)=>{
   let result=[]
-  arr.filter((person)=>{
-    if(person[0]===str.toUpperCase()){
+  names.forEach((person)=>{
+    if(person[0].toUpperCase()===str.toUpperCase()){
       result.push(person)
-    }else{
-      result[0]='nothing found:('
     }
   })
-  return result.join(', ')
+  return result.length>0? result.join(', ') : 'nothing found:('
 }
-console.log(nameFunc(enteredLetter,names));
+console.log(nameFunc(enteredLetter));
 

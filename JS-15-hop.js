@@ -8,20 +8,47 @@ Example: If the user enters the number 3, the numbers will be printed like this:
 1, 2, hop, 4, 5, hop, 7, 8, hop, 10 ..., 200 
 */
 //! Answer:
-let number=prompt('LET\'S PLAY HOP! Enter a number between 2 and 6:)')
-console.log(number);
-const hop=num=>{
-    let result=[]
+//=============first way:==============
+// let number=prompt('LET\'S PLAY HOP! Enter a number between 2 and 6:)')
+// const hop=num=>{
+//     let result=[]
+//     if(number<2 || number>6){
+//         return 'WTF? Enter a valid number!'
+//     }
+//     for(let i=1; i<=200; i++){
+//         if(i%num===0){
+//             result.push('hop')
+//         }else{
+//             result.push(i)
+//         }
+//     }
+//     return result.join(', ')
+// }
+// console.log(hop((number)));
+
+
+//==============second way:================
+let entererdNumber
+const hop=()=>{
+    let number=prompt('LET\'S PLAY HOP! Enter a number between 2 and 6:)')
     if(number<2 || number>6){
-        return 'WTF? Enter a valid number!'
-    }
+        alert('...?! Enter a valid number!') 
+        hop()
+    }else{
+        entererdNumber=number
+    }  
+}
+hop()
+const hoop=numm=>{
+    let result=[]
     for(let i=1; i<=200; i++){
-        if(i%num===0){
+        if(i%numm===0){
             result.push('hop')
         }else{
             result.push(i)
         }
     }
     return result.join(', ')
+
 }
-console.log(hop((number)));
+console.log(hoop(entererdNumber));
