@@ -10,6 +10,7 @@
 
 //2:
  const pEleFirst= document.querySelector('p')
+ console.log(pEleFirst);
 
  //3:
  const firstP= document.querySelector('#pOne')
@@ -19,10 +20,11 @@
 
  //4:
  const allP=document.querySelectorAll('p')
+ console.log(allP);
 
  //5:
  allP.forEach(para=>{
-    console.log(para.innerHTML);
+    console.log(para.innerText);
  })
 
  //6:
@@ -33,7 +35,7 @@ firstP.setAttribute('class', 'firstPara')
 secondP.id='secondPara'
 thirdP.setAttribute('id','thirdPara')
 fourthP.className= 'fourthPara'
-console.log(document.querySelector('body').innerHTML);
+// console.log(document.querySelector('body').innerHTML);
 
 //8:
 firstP.style.color='aqua'
@@ -44,8 +46,8 @@ fourthP.style.background='orange'
 //9:
 for(let i=0; i<allP.length; i++){
     if(i%2===0){
-       allP[i].style.color='red' 
+       allP[i].style.color='green' 
     }else{
-        allP[i].style.color='green'
+        allP[i].style.color='red'
     }
 }
