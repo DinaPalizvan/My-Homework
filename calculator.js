@@ -51,7 +51,6 @@ equal.addEventListener("click", ()=>{
     console.log(numTwo);
     const result= calculate(numOne, operator, numTwo)
     monitor.value=result;
-    numOne=result;
     operator="";
     input=""
 })
