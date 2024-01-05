@@ -1,0 +1,71 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: bisque;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 50vw;
+    height: 50vh;
+}
+.season{
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin: 40px;
+}
+.text{
+    align-items: center;
+    position: absolute;
+    top: 45%;
+    right: 50%;
+    font-size: xx-large;
+    font-weight: 900;
+}
+.spring{
+    background:linear-gradient(0.25turn,#FFADE6, #F169E8);
+    border: 3px solid rgb(116, 0, 151);
+}
+.summer{
+    background:linear-gradient(0.25turn,#90F8A7, #4DAF5D);
+    border: 3px solid rgb(0, 122, 16);
+}
+.winter{
+    background:linear-gradient(0.25turn,#CDFFD8, #94B9FF);
+    border: 3px solid rgb(18, 0, 179);
+}
+.fall{
+    background:linear-gradient(0.25turn,#FFDE59, #FF914D);
+    border: 3px solid rgb(151, 101, 0);
+}
+img{
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    position: absolute;
+}
+.flower{
+    top: 14%;
+    left: 31.5%;
+}
+.icecream{
+    top: 14%;
+    left: 54.5%;
+}
+.snow{
+    top: 63%;
+    left: 54.5%;
+}
+.leaf{
+    top:63% ;
+    left: 31.5%;
+}
