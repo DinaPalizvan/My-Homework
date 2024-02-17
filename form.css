@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+ 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color:rgb(18, 18, 18) ;
+    box-shadow: 0 0 10px 5px;
+    z-index: 5;
+}
+nav{
+    display: flex;
+    height: 30px;
+    justify-content: space-evenly;
+    padding: 5px;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(252, 245, 229);
+}
+body div img{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    z-index: -5;
+    object-fit: cover;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+section{
+    background-color:rgb(34, 34, 34) ;
+    width: 40%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: -10px 10px 10px rgb(33, 23, 23) ;
+    color: rgb(252, 245, 229);
+    border: double 7px black;
+    position: relative;
+    margin-top: 15px;
+}
+h2{
+    color: rgb(243, 159, 90);
+    margin: 5px;
+    text-shadow: 0 0 10px;
+}
+#dark{
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(34, 34, 34, 0.744);
+    position: fixed;
+    z-index: -3;
+}
+#top-right{
+    border-top: 2px solid rgb(243, 159, 90);
+    position: absolute;
+    z-index: 2;
+    top: 5px;
+    right: 5px;
+    width: 50px;
+    height: 50px;
+    border-right: 2px solid rgb(243, 159, 90);
+}
+#bottom-left{
+    border-bottom: 2px solid rgb(243, 159, 90);
+    position: absolute;
+    z-index: 2;
+    bottom: 5px;
+    left: 5px;
+    width: 50px;
+    height: 50px;
+    border-left: 2px solid rgb(243, 159, 90);
+}
+.one{
+    margin-bottom: 15px;
+}
+section div:not(#top-right,#bottom-left){
+    margin: 5px 0;
+    width: 250px ;
+    padding: 1px 0;
+}
+section div input,textarea,select{
+    margin: 2px 0;
+    background-color: rgb(0, 0, 0);
+    color: rgba(250, 235, 215, 0.474);
+    border: 0;
+    padding: 4px;
+    border-radius: 5px;
+}
+section div select:hover{
+    box-shadow: 0 0 10px rgb(243, 159, 90);
+}
+section div input:hover{
+    box-shadow: 0 0 10px rgb(243, 159, 90);
+}
+section div textarea:hover{
+    box-shadow: 0 0 10px rgb(243, 159, 90);
+}
+form button{
+    padding: 5px 10px;
+    border: 0;
+    border-radius: 5px;
+    background-color: rgb(243, 159, 90);
+}
+@media (min-width:300px) and (max-width:750px){
+    section{
+        width: 70%;
+        height: 90%;
+        font-size: 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-size: 10px;
+        padding: 5px 5px 10px 10px;
+    }
+    h2{
+        font-size: 15px;
+        margin: 5px 10px 5px -40px;  
+    }
+    .one{
+        font-size: 10px;
+    }
+    form input,textarea,select{
+        font-size: 10px;
+    }
+    section div{
+        width: 200px;
+    }
+    form button{
+        margin: 0;
+    }
+
+}

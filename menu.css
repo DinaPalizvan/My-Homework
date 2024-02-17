@@ -1,0 +1,244 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(13, 13, 13);
+} 
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+header{
+    position: sticky;
+    top: 0;
+    background-color:rgb(18, 18, 18) ;
+    box-shadow: 0 0 10px 5px;
+    z-index: 5;
+}
+nav{
+    display: flex;
+    height: 30px;
+    justify-content: space-evenly;
+    padding: 5px;
+    margin: 5px;
+}
+header nav a{
+    text-decoration: none;
+    color: rgb(252, 245, 229);
+}
+.intro{
+    display: flex;
+}
+.intro .img{
+    width: 57vw;
+    height: 400px;
+}
+.intro div img{
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+.intro div:not(.img){
+    width: 30vw;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+h1{
+    margin-bottom: 5px;
+    color: aliceblue;
+    font-size: xx-large;
+}
+.intro div p{
+    font-size: smaller;
+    color: aliceblue;
+    padding: 30px 0;
+}
+.intro div a button{
+    margin-top: 15px;
+    padding: 5px 20px;
+    border-radius: 5px;
+    background-color: rgb(243, 159, 90);
+    border: 3px solid rgb(243, 159, 90);
+    color:rgb(50, 41, 41) ;
+}
+.intro div a button:hover{
+    cursor: pointer;
+}
+.fav{
+    color: rgb(243, 159, 90);
+    margin: 10px;
+}
+.A{
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin: 10px;
+    border-bottom: 2px solid rgb(243, 159, 90);
+    border-top: 2px solid rgb(243, 159, 90);
+    font-size: xx-large;
+    text-shadow: 0 0 10px;
+}
+article{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+article section{
+    width: 300px;
+    height: 550px;
+    margin: 10px 5px ;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+}
+article section img{
+    width: 280px;
+    height: 450px;
+    margin-top: 5px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+article section p{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin:0 5px;
+}
+h3{
+    color: rgba(240, 248, 255, 0.925);
+    margin: 10px 5px;
+}
+article section p span{
+    color: rgba(240, 248, 255, 0.544);
+}
+article section button{
+    margin: 5px 0 5px 5px;
+    width: 50px;
+    border-radius: 5px;
+    background-color: rgb(243, 159, 90);
+    border: 3px solid rgb(243, 159, 90);
+    color:rgb(50, 41, 41) ;
+    transition: all 0.5s;
+}
+article section button a{
+    text-decoration: none;
+    color:rgb(50, 41, 41) ;
+}
+article section button a:visited{
+    color:rgb(50, 41, 41) ;
+}
+article section button:hover{
+    transform: scale(1.1);
+    cursor: pointer;
+}
+article section:hover{
+    background-color: rgba(243, 159, 90, 0.699);
+    box-shadow: 0 0 10px rgb(255, 160, 82);
+    transition: all 0.5s;
+}
+article section:hover h3{
+    color: rgb(50, 41, 41);
+}
+article section div{
+    width: 100%;
+}
+#bug img{
+    height: 430px;
+}
+#top-btn{
+    position: fixed;
+    bottom: 20px;
+    right: 49%;
+    padding: 7px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    border-radius: 50%;
+    background-color:rgb(37, 75, 98)  ;
+    box-shadow: 0 0 10px 5px rgb(37, 75, 98) ;
+    border: 0;
+    text-decoration: none;
+    color: rgb(119, 171, 183) ;
+}
+.cart{
+    width: 45px;
+    height: 25px;
+    background-color: rgb(255, 160, 82);
+    color: black;
+    border: 0;
+    border-radius: 10px;
+    position: relative;
+}
+.cart::after{
+    content: "";
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    border-radius: 50%;
+    left: 80%;
+    top: -5%;
+    visibility: hidden;
+}
+.cart-after::after{
+    visibility: visible;
+}
+.cart:hover{
+    cursor: pointer;
+    box-shadow: 0 0 10px;
+}
+.cart i{
+    color: black;
+}
+
+@media (min-width: 320px) and (max-width:620px){
+    h1{
+        font-size: 20px;
+    }
+    .intro .img{
+        width: 45vw;
+        height: 220px;
+    }
+    .intro div img{
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+    }
+    .intro div:not(.img){
+        width: 50vw;
+        padding: 5px;
+        display: flex;
+        align-items: flex-start;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .intro div p{
+        font-size: 10px;
+        color: aliceblue;
+        padding: 30px 0;
+    }
+    .intro div a button{
+        font-size: 10px;
+        margin-top: 5px;
+        padding: 5px 20px;
+        border-radius: 5px;
+        background-color: rgb(243, 159, 90);
+        border: 3px solid rgb(243, 159, 90);
+        color:rgb(50, 41, 41) ;
+    }
+}

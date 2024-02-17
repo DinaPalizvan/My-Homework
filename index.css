@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuggles&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+header{
+ background-image: url(https://img.freepik.com/free-photo/sweet-pastry-assortment-top-view_23-2148516578.jpg?w=2000);
+ height: 45vh;
+ background-repeat: no-repeat;
+ width: 100%;
+ background-position: center;
+ background-size: cover;
+ padding: 20px;
+ display: flex;
+ flex-direction: column;
+}
+body{
+    background-color:rgb(20, 44, 57) ;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+}
+.enter{
+    font-size: 70px;
+    font-family: 'Pacifico', cursive;
+    color: rgb(37, 75, 98);
+    background-color: rgba(250, 235, 215, 0.468);
+    padding: 20px;
+    text-shadow: 0 0 4px black;
+    width: 400px;
+    border-radius: 50px;
+}
+
+header p:not(.enter){
+    width: 270px;
+    margin: 20px 0;
+    font-size: larger;
+    border-top: solid 2px rgb(236, 219, 186) ;
+    color: rgb(25, 25, 25);
+    text-shadow: 0 0 4px rgb(236, 219, 186);
+    display: inline-block;
+    padding: 15px 5px;
+    background-color: rgba(37, 75, 98, 0.334);
+    border-radius: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#one{
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px 20px ;
+    background-color: rgba(243, 159, 90, 0.866) ;
+    color: rgb(37, 75, 98) ;
+    border: 3px solid rgb(236, 219, 186) ;
+    border-radius: 10px;
+    box-shadow: -5px 5px 10px 5px  rgb(13, 29, 38);
+    transition: all 0.5s ;
+    transform-origin: right;
+}
+h2{
+    margin: 20px 10px;
+    font-size: 30px;
+    font-family: 'Open Sans', sans-serif;
+}
+#one p{
+    text-align: justify;
+}
+main section:not(#one){
+    width: 300px;
+    height: 400px;
+    margin: 10px;
+    padding: 20px 20px ;
+    background-color: rgb(37, 75, 98);
+    color: rgb(236, 219, 186) ;
+    border: 3px solid rgb(236, 219, 186) ;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-shadow: -5px 5px 10px 5px  rgb(13, 29, 38);
+    transition: all 0.5s ;
+    font-family: 'Open Sans', sans-serif;
+    transform-origin: right;
+    color: rgb(236, 219, 186);
+}
+main section:hover{
+    transform: perspective(1500px) rotateY(30deg)
+    
+}
+img{
+    width: 250px;
+    height: 300px;
+    border-radius: 10px;
+}
+h3{
+    margin: 10px 0 5px 0;
+}
+section p{
+    text-align: center;
+}
+footer{
+    background-color: rgba(119, 171, 183, 0.178) ;
+    margin-top: 20px ;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+
+}
+footer section{
+width: 300px;
+text-align: center;
+border-right: 1px solid ;
+border-left: 1px solid ;
+color: rgb(236, 219, 186);
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: small;
+}
+footer section a:visited{
+color:  rgb(200, 75, 49);
+}
+footer section a{
+    color:  rgb(200, 75, 49);
+ 
+}
+h5{
+    margin: 7px;
+    font-size: larger;
+}
+main section a{
+    color: rgb(236, 219, 186) ;
+}
+main section a:visited{
+    color:  rgb(200, 75, 49);
+  
+}
+@media (min-width: 320px) and (max-width:450px){
+.enter{
+    width: 200px;
+    font-size: 20px;
+}
+header p:not(.enter){
+    width: 150px;
+    font-size: 10px;
+}
+header{
+    height: 30vh;
+}
+}

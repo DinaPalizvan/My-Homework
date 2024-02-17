@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./form.css" />
+  </head>
+  <body>
+    <header>
+        <nav>
+            <a href="./">Home</a>
+            <a href="./menu.html">Menu</a>
+        </nav>
+    </header>
+    <div>
+      <img
+        src="https://img.freepik.com/free-photo/sweet-pastry-assortment-top-view_23-2148516578.jpg?w=2000"
+        alt="lorem"
+      />
+    </div>
+    <div id="dark"></div>
+    <main>
+      <section>
+        <h2>SWEET BAKERY</h2>
+        <form action="#">
+          <p class="one">To submit your order, please fill out this form:</p>
+          <div>
+            <label for="name">Full Name:</label> <br />
+            <input type="text" name="name" id="name" placeholder="name" />
+          </div>
+          <div>
+            <label for="email">Email Adress:</label> <br />
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email address"
+            />
+          </div>
+          <div>
+            <label for="number">Phone Number:</label> <br />
+            <select name="num" id="num">
+              <option value="+98">+98</option>
+              <option value="+1">+1</option>
+              <option value="+44">+44</option>
+              <option value="+56">+56</option>
+              <option value="+91">+91</option>
+            </select>
+            <input type="tel" name="number" id="number" placeholder="+...." />
+          </div>
+          <div>
+            <p class="validation"></p>
+            <label for="Pass">Password:</label> <br />
+            <input
+              type="password"
+              name="pass"
+              id="pass"
+              placeholder="password"
+              required
+            />
+          </div>
+          <div>
+            <label for="country">Country</label> <br />
+            <select name="country" id="country">
+              <option value="">Please Choose Your Country</option>
+              <option value="Am">United States of America</option>
+              <option value="Ir">Iran</option>
+              <option value="Ca">Canada</option>
+              <option value="En">England</option>
+            </select>
+          </div>
+          <div>
+            <label for="add">Enter Your Full Address:</label><br />
+            <textarea name="add" id="add" rows="3"></textarea>
+          </div>
+          <div>
+            <p>Im ordering for:</p>
+            <input type="radio" name="who" id="me" />
+            <label for="me">myself</label>
+            <input type="radio" name="who" id="them" />
+            <label for="them">someone else</label>
+          </div>
+          <div>
+            <label for="why">Why did you choose us?</label> <br />
+            <textarea name="add" id="add" rows="2"></textarea>
+          </div>
+          <button>SUBMIT</button>
+        </form>
+        <div id="top-right"></div>
+        <div id="bottom-left"></div>
+      </section>
+    </main>
+
+    <script src="./form.js"></script>
+  </body>
+</html>

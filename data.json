@@ -1,0 +1,117 @@
+{
+    "products":[
+        {
+            "id": "1",
+            "src": "https://i.pinimg.com/564x/1a/34/5d/1a345dd9088dd62be6897dd059174a35.jpg",
+            "name": "Special VIP",
+            "price": "20$",
+            "weight": "900gr"
+        },
+        {
+            "id": "2",
+            "src": "https://i.pinimg.com/564x/91/c3/82/91c38234874ac596db87f6a751f662c3.jpg",
+            "name": "Scalp Chocolate Muffin Cake",
+            "price": "7$",
+            "weight": "100gr"
+        },
+        {
+            "id": "3",
+            "src": "https://i.pinimg.com/564x/c7/20/49/c72049a5eb30cb14f3b61b7ff074d67d.jpg"  ,
+            "name": "Blueberry Cake",
+            "price": "6$",
+            "weight": "390gr"
+        },
+        {
+            "id": "4",
+            "src": "https://i.pinimg.com/564x/92/13/ac/9213ac622c855c29263d28dcbfec1fcd.jpg",
+            "name": "Strawberry Chocolate",
+            "price": "6$",
+            "weight": "300gr"
+        },
+        {
+            "id": "5",
+            "src": "https://i.pinimg.com/564x/bc/62/6a/bc626a1e50a73f61b7992b80066d6ed5.jpg" ,
+            "name": "BlueBerry Chocolate Cake",
+            "price": "12$",
+            "weight": "700gr"
+        },
+        {
+            "id": "6",
+            "src": "https://i.pinimg.com/564x/73/3f/dd/733fdd4b78b9afae734ef5c92a132eda.jpg" ,
+            "name": "Cocolate Chip Cookie",
+            "price": "5$",
+            "weight": "100gr"
+        },
+        {
+            "id": "7",
+            "src": "https://i.pinimg.com/564x/50/2b/28/502b2862918b7c07ee5a38efca8cd944.jpg" ,
+            "name": "Chocolate Macarone",
+            "price": "9$",
+            "weight": "50gr"
+        },
+        {
+            "id": "8",
+            "src": "https://i.pinimg.com/564x/5f/a5/24/5fa5246b4728c25321a22bdc79ccdf26.jpg" ,
+            "name": "Chocolate Cake",
+            "price": "10$",
+            "weight": "500gr"
+        },
+        {
+            "id": "9",
+            "src": "https://i.pinimg.com/564x/66/33/fb/6633fb3a0fe8e68b76959d6dca505cbd.jpg" ,
+            "name": "Pancake whith Strawberry",
+            "price": "10$" ,
+            "weight": "600gr"
+        },
+        {
+            "id": "10",
+            "src": "https://i.pinimg.com/564x/cd/be/5d/cdbe5d1638de3f107274da926b8188ac.jpg" ,
+            "name": "Chocolate Chip Cake",
+            "price": "13$",
+            "weight": "800gr"
+        },
+        {
+            "id": "11",
+            "src":"https://i.pinimg.com/564x/0c/55/0e/0c550e1e889541eef8c86fa36b046eb2.jpg" ,
+            "name": "Coconut Cookie",
+            "price": "3$",
+            "weight": "200gr"
+        },
+        {
+            "id": "12",
+            "src": "https://i.pinimg.com/564x/83/24/4e/83244efc3538d9a69dcbbbe2de6c7336.jpg" ,
+            "name": "Chocolate Muffin Cake",
+            "price": "5$",
+            "weight": "300gr"
+        },
+        {
+            "id": "13",
+            "src": "https://i.pinimg.com/236x/c2/5e/57/c25e579f885c8f5dfe13de6f60c19e99.jpg" ,
+            "name": "Donuts Whith Chocolat Cream",
+            "price": "5$",
+            "weight": "400gr"
+        },
+        {
+            "id": "14",
+            "src": "https://i.pinimg.com/564x/92/c6/fc/92c6fcd7e9c6e3aad31e4eb412039e4f.jpg" ,
+            "name": "Chocolate Role Cake",
+            "price": "7$",
+            "weight": "500gr"
+        },
+        {
+            "id": "15",
+            "src": "https://i.pinimg.com/564x/16/8d/68/168d68cddb64dac4cc5c2c4b03221ce6.jpg" ,
+            "name": "Creamy Rasberry Cake",
+            "price": "10$",
+            "weight": "600gr"
+        },
+        {
+            "id": "16",
+            "src": "https://i.pinimg.com/564x/e3/93/72/e39372cb8f893388a32680b933d150b5.jpg" ,
+            "name": "Chocolate Strawberry Cake",
+            "price": "10$",
+            "weight": "800gr"
+        }
+    ]
+}
+    
