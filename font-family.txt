@@ -1,0 +1,2 @@
+font-family: 'Josefine Sans';
+font-family: 'Alata';
