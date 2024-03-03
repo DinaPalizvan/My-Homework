@@ -1,0 +1,252 @@
+@font-face {
+    font-family: "Alata-regular";
+    src: url(./fonts/Alata-Regular.ttf);
+}
+@font-face {
+    font-family: "JosefinSans-light";
+    src: url(./fonts/JosefinSans-Light.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.regular{
+    font-family: "Alata-regular";
+}
+.light{
+    font-family: "JosefinSans-light";
+}
+.grid{
+    display: grid;
+    grid-template-columns: 1fr 8fr 1fr;
+}
+.flex{
+    display: flex;
+}
+header{
+    background-image: url(./images/desktop/image-hero.jpg);
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center top;
+    color: white;
+}
+.header-container{
+    grid-column: 2 / 3;
+}
+nav{
+    justify-content: space-between;
+    margin-top: 50px;
+}
+nav a{
+    font-family: "Alata-regular";
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+nav svg{
+    display: none;
+}
+h2{
+    color: white;
+    font-size: xx-large;
+}
+header h1{
+    border: 2px solid black;
+    color: black;
+    width: 650px;
+    min-height: 200px;
+    font-size: 73px;
+    padding: 40px;
+    margin: 150px 0;
+    font-weight: lighter;
+}
+main{
+    display: flex;
+
+}
+.main-container{
+    position: relative;
+    width: 42rem;
+    margin: 2rem auto;
+}
+main h1{
+    border: 2px solid black;
+    color: black;
+    font-size: 70px;
+    padding: 40px;
+    margin: 80px 0;
+    font-weight: lighter;
+}
+label{
+    font-family: "Alata-regular";
+    font-weight: lighter;
+}
+input, textarea{
+    width: 100%;
+    border: 1px solid black;
+    padding: 10px;
+    border-radius: 0;
+    margin-bottom: 20px;
+    margin-top: 10px;
+}
+input:focus, textarea:focus{
+    border: 1px solid rgb(0, 179, 0);
+    outline: 0;
+}
+button{
+    background-color: white;
+    border-radius: 0;
+    border: 1px solid black;
+    width: 160px;
+    height: 45px;
+    letter-spacing: 5px;
+    transition: all 0.5s;
+    font-size: 15px;
+    position: absolute;
+    right: 0;
+}
+button:hover{
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+footer{
+    background-color: black;
+    color: white;
+    margin-top: 100px;
+    padding: 3.5rem 0;
+}
+.footer-container{
+    grid-column: 2/3;
+}
+h5{
+    font-size: 30px;
+    margin-bottom: 50px ;
+}
+.part-one{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.part-two{
+    flex-direction: row;
+    justify-content: space-between;
+}
+.part-two a{
+    color: white;
+    text-decoration: none;
+    font-family: "Alata-regular";
+    margin-right: 20px;
+}
+.part-two p{
+    color: gray;
+}
+.footer-span{
+    font-size: x-small;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+.footer-span a:visited{
+    color: rgb(62, 98, 174);
+}
+.footer-span a{
+    text-decoration: underline;
+}
+svg{
+    margin: 0 5px;
+}
+svg:hover{
+    cursor: pointer;
+}
+.footer-mobile{
+    grid-column: 2;
+    display: flex;
+    flex-direction: column;
+}
+.footer-mobile section{
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+.footer-mobile h5{
+    margin: 0;
+}
+.footer-mobile .links{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 30px 0;
+}
+.footer-mobile .links a{
+    color: white;
+    text-decoration: none;
+    font-family: "Alata-regular";
+    margin: 10px 0;
+}
+.footer-mobile p{
+    color: gray;
+    margin-top: 20px;
+}
+a{
+    position: relative;
+    text-decoration: none;
+}
+a::before:not(footer span a){
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 3px;
+    background-color: white;
+    bottom: -5px;
+    left: 0;
+    transition: transform 0.3s ease, width 0.3s ease;
+    transform: scaleX(0);
+}
+a:hover::before{
+    transform: scaleX(1);
+}
+@media(min-width: 1201px){
+    .footer-container{
+        display: block;
+    }
+    .footer-mobile{
+        display: none;
+    }
+}
+@media(max-width: 1200px){
+    nav span{
+        display: none;
+    }
+    nav svg{
+        display: block;
+    }
+    .footer-container{
+        display: none;
+    }
+    .footer-mobile{
+        display: block;
+    }
+    main h1{
+        font-size: 50px
+    }
+
+}
+@media (max-width: 800px) {
+    .main-container{
+        width: 80vw;
+    }
+    header h1{
+        font-size: 50px;
+        max-width: 70vw;
+        min-height: 300px;
+    }
+    main h1{
+        font-size: 30px
+    }
+}
+@media (max-width: 500px){
+    header h1{
+        font-size: 30px;
+    }
+}
