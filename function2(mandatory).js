@@ -11,11 +11,7 @@
  *
  */
 function tidyUpString(strArr) {
-  return strArr.map(str=>str.trim()).map(str=>{
-    const letter="/"
-    str.replaceAll(letter, "")
-  })
-  
+  return strArr.map(str=>str.trim().replace("/", "").toLowerCase())
 }
 
 /*
@@ -26,7 +22,9 @@ Complete the function to check if the variable `num` satisfies the following req
 Tip: use logical operators
 */
 
-function validate(num) {}
+function validate(num) {
+  return typeof(num)==="number" && num%2===0 && num<=100
+}
 
 /* 
 Write a function that returns a copy of the given array "arr"(first parameter of the function)
@@ -34,7 +32,11 @@ but the element at the given index(second parameter of the function) should be r
 The function must NOT change the original array, arr.
 */
 
-function remove(arr, index) {}
+function remove(arr, index) {
+  const copy= arr.slice()
+  const remove=copy.splice(index, 1)
+  return copy
+}
 
 /*
 Write a function that:
@@ -43,7 +45,17 @@ Write a function that:
 - the decimal numbers must be rounded to 2 decimal places
 - numbers greater 100 must be replaced with 100 (e.g. 135 => '100%')
 */
-function formatPercentage(arr) {}
+function formatPercentage(arr) {
+  return arr.map(num=>{
+    if(num>100){
+      return "100%"
+    }else if(String(num).length==2){
+      return `${num}%`
+    }else{
+      return `${num.toFixed(2)}%`
+    }
+  })
+}
 
 /* ======= TESTS - DO NOT MODIFY ===== */
 
