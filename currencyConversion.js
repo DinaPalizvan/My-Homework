@@ -8,7 +8,7 @@
  * @format
  */
 
-function convertToUSD() {}
+function convertToUSD(pond) {return pond*1.4}
 
 /*
   CURRENCY FORMATTING
@@ -18,7 +18,7 @@ function convertToUSD() {}
   Additionally, the business has decided to add a 1% fee to all foreign transactions, meaning only 99% of the pound amount should be converted to BRL.
 */
 
-function convertToBRL() {}
+function convertToBRL(pound) {return (0.99*pound)*5.7}
 
 /* ======= TESTS - DO NOT MODIFY ===== 
 There are some Tests in this file that will help you work out if your code is working.
