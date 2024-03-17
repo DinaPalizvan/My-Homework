@@ -17,6 +17,14 @@
 
 // `getAllFrequencies` goes here
 
+const getAllFrequencies=()=>{
+  let frequencies=[]
+  for(let i=87; i<109; i++){
+    frequencies.push(i)
+  }
+  return frequencies
+}
+
 /**
  * Next, let's write a function that gives us only the frequencies that are radio stations.
  * Call this function `getStations`.
@@ -29,6 +37,11 @@
 
 //
 // `getStations` goes here
+const getStations=()=>{
+  const frequencies = getAllFrequencies();
+  return frequencies.filter((e) => isRadioStation(e));
+}
+
 /* ======= TESTS - DO NOT MODIFY ======= */
 
 function getAvailableStations() {
