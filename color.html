@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        li:nth-of-type(1n+11){
+            display: none;
+        }
+        /* sorry i know it's not best practice. But making a css file wasn't worth it. */
+    </style>
+  </head>
+  <body>
+    <section
+      id="container"
+      style="
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        height: 90vh;
+      "
+    >
+      <section
+        id="section1"
+        style="
+          border: 2px gray solid;
+          padding: 60px 40px;
+          border-radius: 5px;
+          width: 200px;
+          height: 70px;
+        "
+      >
+        <input type="text" id="colorText" style="margin-bottom: 10px" /> <br />
+        <input type="color" id="color" />
+      </section>
+      <section
+        id="section2"
+        style="
+          border: 2px gray solid;
+          padding: 0px;
+          border-radius: 5px;
+          width: 220px;
+          min-height: 180px;
+        "
+      >
+        <ul id="lastTenColors"></ul>
+      </section>
+    </section>
+
+    <script src="./color-changer.js"></script>
+  </body>
+</html>
