@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Website</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Work Sans", sans-serif;
+}
+header, main{
+    padding: 2rem 5rem;
+} 
+header{
+    background-color: rgb(237, 237, 237);
+    display: flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+}
+nav a{
+    text-decoration: none;
+    margin: 0 1rem;
+    color: gray;
+    font-family: "Work Sans", sans-serif;
+    letter-spacing: 4px;
+}
+header div{
+    color: gray;
+    font-family: "Work Sans", sans-serif;
+    font-size: larger;
+    letter-spacing: 4px;
+}
+h1, h2{
+    margin: 10px 0;
+    font-weight:500 ;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+input, textarea{
+ width: 100%;   
+ margin: 10px 0;
+ outline: 0;
+ padding: 7px;
+}
+input{
+    height: 30px;
+}
+input:focus, textarea:focus{
+    border: rgb(0, 128, 213) 2px;
+    box-shadow: 0 0 5px rgb(0, 128, 213);
+} 
+label{
+    font-weight: 600;
+}
+button{
+    padding: 8px 13px;
+    background-color: rgb(0, 128, 213);
+    color: white;
+    border: 0;
+    border-radius: 5px;
+}
+footer{
+    position: absolute;
+    bottom: 0;
+    height: 30px;
+    width: 100vw;
+    background-color: rgb(0, 154, 139);
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div>DAILY JOURNAL</div>
+        <nav>
+            <a href="./">HOME</a>
+            <a href="/about">ABOUT US</a>
+            <a href="/contact">CONTACT US</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Compose</h1>
+        <form action="/compose" method="post">
+            <label for="">Title:</label> <br>
+            <input type="text" name="title" id="title"><br>
+            <label for="">Post:</label><br>
+            <textarea cols="30" rows="10" name="post" id="post"></textarea><br>
+            <button type="submit">Publish</button>
+        </form>
+    </main>
+    <footer>
+         
+    </footer>
+
+</body>
+</html>
