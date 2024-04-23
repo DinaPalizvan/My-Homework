@@ -60,7 +60,9 @@ app.get("/blogs", (req, res)=>{
 
 app.get("/blogs/:name", (req, res)=>{
     const search= req.params.name
-    const selected=dataArr.find(p=>(p.title).toLowerCase()===search.toLowerCase())
+    const newData=fs.readFileSync("./db/data.json", "utf-8")
+    const newDataArr=JSON.parse(newData)
+    const selected=newDataArr.find(p=>(p.title).toLowerCase()===search.toLowerCase())
     const blogs=fs.readFileSync("./db/blogs.json", "utf-8")
     const blogsArr= JSON.parse(blogs)
     blogsArr[0]=selected
