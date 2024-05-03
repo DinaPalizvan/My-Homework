@@ -8,10 +8,10 @@ const router=Router()
 
 
 
-router.get("/member", getAllFacultyMembers)
+router.get("/", getAllFacultyMembers)
 
-router.post("/member", addFacultyMember)
+router.post("/", addFacultyMember)
 
-router.delete("member/:id", deleteFacultyMember)
+router.delete("/:id", deleteFacultyMember)
 
 module.exports= router
