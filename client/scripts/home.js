@@ -27,7 +27,7 @@ getAllUser()
         const { res, error } = await deleteUser(e.target.id);
         if (res) {
           e.target.parentElement.parentElement.remove();
-          alert("user deleted successfully!");
+          alert("user created successfully!");
         } else if (error) {
           alert("something went wrong");
         }
