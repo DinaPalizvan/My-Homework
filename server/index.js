@@ -1,11 +1,20 @@
 const express= require("express")
 const db= require("./db/connection")
 
+const userRouter= require("./routes/users.rotes")
+
 
 const app= express()
-const port= process.env.PORT || 5000
+const port= process.env.PORT || 3000
 
+app.use(express.json())
+app.use("/employee", userRouter )
 
+// app.get("/employee", async(req, res)=>{
+//     const query="select * from employee;"
+//     const [users]= await db.execute(query)
+//     console.log(users);
+// })
 
 
 
