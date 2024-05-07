@@ -8,6 +8,8 @@ const app= express()
 const port= process.env.PORT || 3000
 
 app.use(express.json())
+app.use(express.urlencoded({extended: true}))
+
 app.use("/employee", userRouter )
 
 // app.get("/employee", async(req, res)=>{
@@ -16,7 +18,14 @@ app.use("/employee", userRouter )
 //     console.log(users);
 // })
 
-
+// app.post("/employee", async (req, res)=>{
+//     console.log(req.body);
+//     const {name, role, email=null, phone=null}= req.body
+//     const query= "insert into employee (name, role, email, phone) values (?,?,?,?)"
+//     const [{insertId}]=await db.execute(query, [name, role, email, phone])
+//     return insertId
+    
+// })
 
 
 
