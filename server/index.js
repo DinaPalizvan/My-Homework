@@ -24,11 +24,19 @@ app.use("/employee", userRouter )
 //     const query= "insert into employee (name, role, email, phone) values (?,?,?,?)"
 //     const [{insertId}]=await db.execute(query, [name, role, email, phone])
 //     return insertId
-    
 // })
 
+// app.put("/employee/:id", async(req, res)=>{
+//     const updateId= Number(req.params.id)
+//     if(!updateId) return "not valid id"
+//     const {name, role, email=null, phone=null}= req.body
+//     const query= "update employee set name = ? , role = ? , email = ?, phone = ? where id= ?"
+//     const [{changedRows}]= await db.execute(query, [name, role, email, phone, updateId])
+//     return changedRows
+// })
+ 
 
-
+ 
 
 
 const start=async()=>{

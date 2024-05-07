@@ -1,5 +1,9 @@
 const {Router}= require("express")
-const {getAllUsers, createUser}= require("../controllers/users.controllers")
+const {
+    getAllUsers,
+    createUser,
+    updateUser,
+    }= require("../controllers/users.controllers")
 
 const router= Router()
 
@@ -7,6 +11,8 @@ const router= Router()
 router.get("/", getAllUsers)
 
 router.post("/", createUser)
+
+router.put("/:id", updateUser)
 
 
 
