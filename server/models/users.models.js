@@ -16,16 +16,22 @@ const createUserModel= async({name, role, email= null, phone= null})=>{
 
 
 const updateUserModel= async (id, {name, role, email= null, phone= null})=>{
-    if(!id) return false
     const query= "update employee set name = ? , role = ? , email = ?, phone = ? where id= ?"
     const [{changedRows}]= await db.execute(query, [name, role, email, phone, id])
     return changedRows
 }
 
 
+const deleteUserModel= async(id)=>{
+    const query="delete from employee where id=?"
+    const [{affectedRows}]= await db.execute(query, [id])
+    return affectedRows
+}
+
 
 module.exports={
     getAllUsersModel,
     createUserModel,
-    updateUserModel
+    updateUserModel,
+    deleteUserModel
 } 

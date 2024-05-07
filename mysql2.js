@@ -8,7 +8,7 @@
 7. Test the database connection using the getConnection() method. This method will throw an error if any issues arise during the connection process.✅
 8. Create a route with the GET method to retrieve all information from the employee table.✅
 9. Create a route with the POST method to add a new employee (insert data into the table).✅
-10. Implement another route with the PATCH or PUT method to update an employee's information based on their ID.
+10. Implement another route with the PATCH or PUT method to update an employee's information based on their ID.✅
 11. Implement a route with the DELETE method to delete a record from the employee table.
 12. Export your Database and send it.
 
