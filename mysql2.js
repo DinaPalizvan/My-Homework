@@ -10,12 +10,12 @@
 9. Create a route with the POST method to add a new employee (insert data into the table).✅
 10. Implement another route with the PATCH or PUT method to update an employee's information based on their ID.✅
 11. Implement a route with the DELETE method to delete a record from the employee table.✅
-12. Export your Database and send it.
+12. Export your Database and send it.✅
 
-tutorial for exporting sql database: https://www.youtube.com/watch?v=lbrVhjnM5MQ
+tutorial for exporting sql database: https://www.youtube.com/watch?v=lbrVhjnM5MQ✅
 
 * Optional: https://sqlbolt.com/
 open this website and completed all courses lessons. 
-Then take screenshot of completed task and send to us.
+Then take screenshot of completed task and send to us.✅
 
 */
