@@ -1,0 +1,66 @@
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import Typography from "@mui/material/Typography";
+import { Stack } from "@mui/material";
+import getData from "@/app/utils/fetchData";
+import Image from "next/image";
+
+export async function generateMetadata({ params }) {
+  return {
+    title: `Recipe id ${params.id}`,
+  };
+}
+
+export default async function RecipeId({ params }) {
+  const recipeId = params.id;
+  const data = await getData(
+    `http://localhost:3000/api/v1/recipes/${recipeId}`
+  );
+  return (
+    <Stack alignItems={"center"}>
+      <Card sx={{ width: 700, minHeight: 500, mb: 5 }}>
+        <Image
+          src={data?.image}
+          width={700}
+          height={250}
+          style={{ objectFit: "cover", width: "100%" }}
+          alt="food pic"
+        />
+        <CardContent>
+          <Typography gutterBottom variant="h5" component="div">
+            {data?.name}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Cook Time Minutes: {data?.cookTimeMinutes}
+          </Typography>
+          <hr />
+          <Typography variant="body2" color="text.secondary">
+            Ingredients: {data?.ingredients}
+          </Typography>
+          <br />
+          <Typography variant="body2" color="text.secondary">
+            Instructions: {data?.instructions}
+          </Typography>
+          <hr />
+          <Typography variant="body2" color="text.secondary">
+            Servings: {data?.servings}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Difficulty: {data?.difficulty}
+          </Typography>
+          <Typography variant="body2" color="text.secondary">
+            Calories Per Serving: {data?.caloriesPerServing}
+          </Typography>
+          <br />
+          {data?.tags.map((tag, i) => {
+            return (
+              <Typography variant="body2" color="text.secondary" key={i}>
+                #{tag}
+              </Typography>
+            );
+          })}
+        </CardContent>
+      </Card>
+    </Stack>
+  );
+}
